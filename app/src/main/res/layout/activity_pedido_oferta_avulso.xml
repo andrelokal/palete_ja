@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/red_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="60dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="50dp"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/radius_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:text="Dados da Oferta"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:text="Preencha os dados para efetuar uma oferta por paletes, nós avisaremos assim que um vendedor aceitar sua oferta"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/quantidade"
+            android:hint="Quantidade"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/valor"
+            android:hint="Valor que deseja pagar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:text="Tipo de entrega"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/tipo_entrega">
+
+            <RadioButton android:id="@+id/radio_retirar"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Retirar"/>
+
+            <RadioButton android:id="@+id/radio_entregar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:onClick="onRadioButtonClicked"
+                android:text="Entregar"/>
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/endereco"
+            android:hint="Endereço"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:text="Tipo de Produto"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/tipo_produto">
+
+            <RadioButton android:id="@+id/radio_novo"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Novo"/>
+
+            <RadioButton android:id="@+id/radio_usado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:onClick="onRadioButtonClicked"
+                android:text="Usado"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/green_button_radius"
+        android:textColor="@color/white"
+        android:id="@+id/btn_send"
+        android:textAllCaps="false"
+        android:text=">"/>
+
+
+</LinearLayout>

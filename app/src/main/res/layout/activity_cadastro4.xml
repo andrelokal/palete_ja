@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/red_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="60dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="50dp"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/radius_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:text="Dados Complementares"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:text="Seu número de telefone ..."/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/document_register"
+            android:hint="CPF ou CNPJ"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/telefone_register"
+            android:hint="Telefone Fixo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/celular_register"
+            android:hint="Telefone Celular"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/endereco_register"
+            android:hint="Endereço"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id="@+id/whatsapp_register"
+            android:hint="O celular é Whatsapp ?"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/green_button_radius"
+        android:textColor="@color/white"
+        android:id="@+id/btn_send"
+        android:textAllCaps="false"
+        android:text=">"/>
+
+
+</LinearLayout>

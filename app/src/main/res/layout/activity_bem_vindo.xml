@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo_txt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/redDefault"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:text="@string/title_bem_vindo"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button"
+                android:textColor="#FFF"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/login"
+                android:textAllCaps="false"
+                android:text="Entrar"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:background="@drawable/button"
+                android:layout_margin="10dp"
+                android:textColor="#FFF"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/register"
+                android:textAllCaps="false"
+                android:text="Registrar"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

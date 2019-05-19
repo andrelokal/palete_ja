@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">PaleteJa</string>
+    <string name="title_activity_home_vendedor">HomeVendedorActivity</string>
+    <string name="user_label">Usuário</string>
+    <string name="pass_label">Senha</string>
+    <string name="title_bem_vindo">Lugar de comprar e vender palete!</string>
+    <string name="title_upload">Adicione uma foto ao Perfil</string>
+    <string name="message_upload">Tire uma selfie ou selecione uma foto da galeria</string>
+    <string name="title_activity_teste">teste</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu1">Menu 1</string>
+    <string name="title_activity_minhas_ofertas">MinhasOfertasActivity</string>
+    <string name="title_activity_listar_paletes">ListarPaletesActivity</string>
+    <string name="title_activity_comprador_ofertar">activity_comprador_ofertar</string>
+    <string name="title_activity_comprador_ofertas">CompradorOfertasActivity</string>
+    <string name="title_activity_vendedor_paletes_editar">Editar Oferta</string>
+    <string name="title_activity_vendedor_paletes_novo">Cadastrar Nova Oferta</string>
+    <string name="title_activity_vendedor_paletes_cadastrar">Cadastrar Palete Vendedor</string>
+    <string name="search">Buscar</string>
+
+
+
+</resources>

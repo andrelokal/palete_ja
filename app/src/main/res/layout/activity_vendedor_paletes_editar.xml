@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/radius_white"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descreva a situação que se encontra os paletes"
+                        style="@style/redlabel" />
+
+                    <EditText
+                        android:id="@+id/descricao"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="14dp"
+                        android:hint="Descrição"
+                        android:padding="5dp"
+                        android:background="@drawable/input_text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantidade"
+                        style="@style/redlabel" />
+
+                    <EditText
+                        android:id="@+id/vendedor_paletes_editar_saldo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="14dp"
+                        android:hint="Quantidade"
+                        android:inputType="number"
+                        android:digits="1234567890"
+                        android:padding="5dp"
+                        android:background="@drawable/input_text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tipo do Produto"
+                        style="@style/redlabel" />
+
+                    <RadioGroup
+                        android:id="@+id/vendedor_paletes_editar_tipo_produto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/vendedor_paletes_editar_tipo_produto_novo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Novo" />
+
+                        <RadioButton
+                            android:id="@+id/vendedor_paletes_editar_tipo_produto_usado"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Usado" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Preço Alvo"
+                            style="@style/redlabel" />
+
+                        <EditText
+                            android:id="@+id/vendedor_paletes_editar_preco_alvo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="14dp"
+                            android:hint="R$ 0,00"
+                            android:inputType="numberDecimal"
+                            android:digits="1234567890."
+                            android:padding="5dp"
+                            android:background="@drawable/input_text"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Preço Promoção"
+                            style="@style/redlabel" />
+
+                        <EditText
+                            android:id="@+id/vendedor_paletes_editar_preco_promocao"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="14dp"
+                            android:hint="R$ 0,00"
+                            android:inputType="numberDecimal"
+                            android:digits="1234567890."
+                            android:padding="5dp"
+                            android:background="@drawable/input_text"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Nota Fiscal"-->
+                        <!--android:textColor="@color/redDefault"-->
+                        <!--android:textSize="12dp" />-->
+
+                    <!--<RadioGroup-->
+                        <!--android:id="@+id/vendedor_paletes_editar_nota_fiscal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/vendedor_paletes_editar_nota_fiscal_sim"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="0.5"-->
+                            <!--android:text="Sim" />-->
+
+                        <!--<RadioButton-->
+                            <!--android:id="@+id/vendedor_paletes_editar_nota_fiscal_nao"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="0.5"-->
+                            <!--android:text="Não" />-->
+                    <!--</RadioGroup>-->
+
+                <!--</LinearLayout>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Defina o percentual do desconto por quantidade de paletes"
+                    style="@style/redlabel"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tabela A"
+                            android:textColor="@color/redDefault"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/vendedor_paletes_editar_tabela_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:digits="1234567890"
+                            android:padding="5dp"
+                            android:background="@drawable/input_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quantidade A"
+                            android:textColor="@color/redDefault"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/vendedor_paletes_editar_quantidade_a"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:digits="1234567890"
+                            android:padding="5dp"
+                            android:background="@drawable/input_text"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tabela B"
+                            android:textColor="@color/redDefault"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/vendedor_paletes_editar_tabela_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:digits="1234567890"
+                            android:padding="5dp"
+                            android:background="@drawable/input_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quantidade B"
+                            android:textColor="@color/redDefault"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/vendedor_paletes_editar_quantidade_b"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:digits="1234567890"
+                            android:padding="5dp"
+                            android:background="@drawable/input_text"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tabela C"
+                            android:textColor="@color/redDefault"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/vendedor_paletes_editar_tabela_c"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:digits="1234567890"
+                            android:padding="5dp"
+                            android:background="@drawable/input_text"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quantidade C"
+                            android:textColor="@color/redDefault"
+                            android:textSize="12dp" />
+
+                        <EditText
+                            android:id="@+id/vendedor_paletes_editar_quantidade_c"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:digits="1234567890"
+                            android:padding="5dp"
+                            android:background="@drawable/input_text"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/vendedor_paletes_editar_salvar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/default_button"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="Salvar"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

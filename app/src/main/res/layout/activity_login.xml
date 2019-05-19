@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/redDefault"
+            android:textSize="12dp"
+            android:text="@string/user_label"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="caiocmm@live.com"
+            android:id="@+id/edit_user"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/redDefault"
+            android:layout_marginTop="20dp"
+            android:textSize="12dp"
+            android:text="@string/pass_label"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:text="opa"
+            android:id="@+id/edit_pass"/>
+
+
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:background="@drawable/default_button"
+                android:textColor="#FFF"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/login"
+                android:textAllCaps="false"
+                android:text="Iniciar Sessão"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:background="@drawable/default_button"
+                android:textColor="#FFF"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/recover"
+                android:textAllCaps="false"
+                android:text="Esqueci minha senha"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

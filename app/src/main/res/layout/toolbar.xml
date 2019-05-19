@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/toolbar_bg"
+    app:theme="@style/ToolbarIcons"
+    android:minHeight="?attr/actionBarSize"
+    android:subtitleTextColor="#ffffff"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/toolbar_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="teste"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/white"/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:tint="@color/white"-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/search_toolbar"-->
+            <!--android:src="@android:drawable/ic_search_category_default"/>-->
+
+    <!--</RelativeLayout>-->
+
+</android.support.v7.widget.Toolbar>
